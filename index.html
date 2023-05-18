@@ -13,8 +13,8 @@
 <body>
     <div id="app">
         <h1>Indirizzi email generati:</h1>
-        <ul v-for="email in emails">
-          <li >{{ email }}</li>
+        <ul v-if="emails.length === 10">
+          <li v-for="email in emails">{{ email }}</li>
         </ul>
       </div>
     <script src="./js/script.js"></script>
